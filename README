@@ -1,0 +1,39 @@
+#########################################################################################
+#											#
+#			network probe utility						#
+#											#
+#########################################################################################
+
+
+The probe utility app is used to find the nwetwork characteristics suh as latency,throughput and bandwidth
+
+It is divided into two parts:
+
+1.the probing app which runs in background
+
+2.cli which is used to give user input
+
+
+Th binaries for both cli and process are generated in bin directory  
+CLI usage
+
+1.For finding lateny
+
+we can either give the URL or the ipaddress of to find latency value
+-l option is used
+e.g
+./util -l www.google.com 
+or
+./util -l 192.168.10.12
+
+2.   Throughput calculation
+-t option is used
+./util -t www.google.com
+   or 
+./util -t 192.168.10.12
+
+3.banwidth ulilisation
+
+-b option is used
+
+./util -b eth0
